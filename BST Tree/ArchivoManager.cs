@@ -20,11 +20,12 @@ namespace BST_Tree
             using (FileStream fs = new FileStream(pathArchivo, FileMode.Append))
             using (BinaryWriter writer = new BinaryWriter(fs))
             {
-                long posicion = fs.Position; // Guardamos la posición actual del archivo
+                long posicion = fs.Position;
                 writer.Write(nodo.Clave);
                 writer.Write(nodo.Valor);
                 writer.Write(nodo.PosicionIzquierda);
                 writer.Write(nodo.PosicionDerecha);
+                writer.Write(nodo.Eliminado);  // Escribir el campo Eliminado
                 return posicion;
             }
         }
@@ -39,10 +40,12 @@ namespace BST_Tree
                 string valor = reader.ReadString();
                 long posicionIzquierda = reader.ReadInt64();
                 long posicionDerecha = reader.ReadInt64();
+                bool eliminado = reader.ReadBoolean();  // Leer el campo Eliminado
                 return new Nodo(clave, valor)
                 {
                     PosicionIzquierda = posicionIzquierda,
-                    PosicionDerecha = posicionDerecha
+                    PosicionDerecha = posicionDerecha,
+                    Eliminado = eliminado
                 };
             }
         }
@@ -57,9 +60,11 @@ namespace BST_Tree
                 writer.Write(nodo.Valor);
                 writer.Write(nodo.PosicionIzquierda);
                 writer.Write(nodo.PosicionDerecha);
+                writer.Write(nodo.Eliminado);  // Actualizar el campo Eliminado
             }
         }
     }
+
 
 
 }

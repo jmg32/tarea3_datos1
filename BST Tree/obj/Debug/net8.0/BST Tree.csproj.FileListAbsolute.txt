@@ -12,3 +12,18 @@ C:\Users\Invitado1\Documents\GitHub\datos1_tarea1\BST Tree\BST Tree\obj\Debug\ne
 C:\Users\Invitado1\Documents\GitHub\datos1_tarea1\BST Tree\BST Tree\obj\Debug\net8.0\BST Tree.pdb
 C:\Users\Invitado1\Documents\GitHub\datos1_tarea1\BST Tree\BST Tree\obj\Debug\net8.0\BST Tree.genruntimeconfig.cache
 C:\Users\Invitado1\Documents\GitHub\datos1_tarea1\BST Tree\BST Tree\obj\Debug\net8.0\ref\BST Tree.dll
+C:\Users\Invitado1\Documents\GitHub\tarea3_datos1\BST Tree\bin\Debug\net8.0\BST Tree.exe
+C:\Users\Invitado1\Documents\GitHub\tarea3_datos1\BST Tree\bin\Debug\net8.0\BST Tree.deps.json
+C:\Users\Invitado1\Documents\GitHub\tarea3_datos1\BST Tree\bin\Debug\net8.0\BST Tree.runtimeconfig.json
+C:\Users\Invitado1\Documents\GitHub\tarea3_datos1\BST Tree\bin\Debug\net8.0\BST Tree.dll
+C:\Users\Invitado1\Documents\GitHub\tarea3_datos1\BST Tree\bin\Debug\net8.0\BST Tree.pdb
+C:\Users\Invitado1\Documents\GitHub\tarea3_datos1\BST Tree\obj\Debug\net8.0\BST Tree.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Invitado1\Documents\GitHub\tarea3_datos1\BST Tree\obj\Debug\net8.0\BST Tree.AssemblyInfoInputs.cache
+C:\Users\Invitado1\Documents\GitHub\tarea3_datos1\BST Tree\obj\Debug\net8.0\BST Tree.AssemblyInfo.cs
+C:\Users\Invitado1\Documents\GitHub\tarea3_datos1\BST Tree\obj\Debug\net8.0\BST Tree.csproj.CoreCompileInputs.cache
+C:\Users\Invitado1\Documents\GitHub\tarea3_datos1\BST Tree\obj\Debug\net8.0\BST Tree.sourcelink.json
+C:\Users\Invitado1\Documents\GitHub\tarea3_datos1\BST Tree\obj\Debug\net8.0\BST Tree.dll
+C:\Users\Invitado1\Documents\GitHub\tarea3_datos1\BST Tree\obj\Debug\net8.0\refint\BST Tree.dll
+C:\Users\Invitado1\Documents\GitHub\tarea3_datos1\BST Tree\obj\Debug\net8.0\BST Tree.pdb
+C:\Users\Invitado1\Documents\GitHub\tarea3_datos1\BST Tree\obj\Debug\net8.0\BST Tree.genruntimeconfig.cache
+C:\Users\Invitado1\Documents\GitHub\tarea3_datos1\BST Tree\obj\Debug\net8.0\ref\BST Tree.dll

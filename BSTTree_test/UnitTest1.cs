@@ -121,6 +121,25 @@ namespace BSTTree_test
                 Assert.IsNotNull(nodo);
                 Assert.AreEqual("Valor 10", nodo.Valor); // Verifica que el valor no cambió
             }
+            [TestMethod]
+            public void EliminarNodo_Existente_DebeMarcarloComoEliminado()
+            {
+                // Arrange
+                BSTree arbol = new BSTree(testFilePath);
+                arbol.Insertar(10, "Valor 10");
+                arbol.Insertar(5, "Valor 5");
+                arbol.Insertar(20, "Valor 20");
+
+                // Act
+                bool eliminado = arbol.Eliminar(5);
+
+                // Assert
+                Assert.IsTrue(eliminado);
+                var nodoEliminado = arbol.Buscar(5);
+                Assert.IsNull(nodoEliminado);  // El nodo ya no debería estar disponible
+            }
+
+
         }
     }
 }

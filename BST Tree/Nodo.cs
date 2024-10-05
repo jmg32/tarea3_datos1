@@ -12,6 +12,7 @@ namespace BST_Tree
         public long PosicionDerecha { get; set; }
         public int Clave { get; set; }
         public string Valor { get; set; }
+        public bool Eliminado { get; set; }  // Nuevo campo para indicar si el nodo fue eliminado
 
         public Nodo(int clave, string valor)
         {
@@ -19,8 +20,10 @@ namespace BST_Tree
             Valor = valor;
             PosicionIzquierda = -1;
             PosicionDerecha = -1;
+            Eliminado = false;  // Por defecto, el nodo no está eliminado
         }
     }
+
 
 
 }

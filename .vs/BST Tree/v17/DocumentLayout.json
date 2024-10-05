@@ -1,0 +1,96 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Invitado1\\Documents\\GitHub\\tarea3_datos1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C35410A7-A3D9-471D-B0B5-FF5DE09D6E91}|BSTTree_test\\BSTree_test.csproj|c:\\users\\invitado1\\documents\\github\\tarea3_datos1\\bsttree_test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C35410A7-A3D9-471D-B0B5-FF5DE09D6E91}|BSTTree_test\\BSTree_test.csproj|solutionrelative:bsttree_test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{856CA6E2-0087-4936-B0D9-628EB54713E1}|BST Tree\\BST Tree.csproj|c:\\users\\invitado1\\documents\\github\\tarea3_datos1\\bst tree\\bstree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{856CA6E2-0087-4936-B0D9-628EB54713E1}|BST Tree\\BST Tree.csproj|solutionrelative:bst tree\\bstree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{856CA6E2-0087-4936-B0D9-628EB54713E1}|BST Tree\\BST Tree.csproj|c:\\users\\invitado1\\documents\\github\\tarea3_datos1\\bst tree\\nodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{856CA6E2-0087-4936-B0D9-628EB54713E1}|BST Tree\\BST Tree.csproj|solutionrelative:bst tree\\nodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{856CA6E2-0087-4936-B0D9-628EB54713E1}|BST Tree\\BST Tree.csproj|c:\\users\\invitado1\\documents\\github\\tarea3_datos1\\bst tree\\archivomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{856CA6E2-0087-4936-B0D9-628EB54713E1}|BST Tree\\BST Tree.csproj|solutionrelative:bst tree\\archivomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ArchivoManager.cs",
+              "DocumentMoniker": "C:\\Users\\Invitado1\\Documents\\GitHub\\tarea3_datos1\\BST Tree\\ArchivoManager.cs",
+              "RelativeDocumentMoniker": "BST Tree\\ArchivoManager.cs",
+              "ToolTip": "C:\\Users\\Invitado1\\Documents\\GitHub\\tarea3_datos1\\BST Tree\\ArchivoManager.cs",
+              "RelativeToolTip": "BST Tree\\ArchivoManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T00:57:33.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BSTree.cs",
+              "DocumentMoniker": "C:\\Users\\Invitado1\\Documents\\GitHub\\tarea3_datos1\\BST Tree\\BSTree.cs",
+              "RelativeDocumentMoniker": "BST Tree\\BSTree.cs",
+              "ToolTip": "C:\\Users\\Invitado1\\Documents\\GitHub\\tarea3_datos1\\BST Tree\\BSTree.cs",
+              "RelativeToolTip": "BST Tree\\BSTree.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAUwGUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T00:57:33.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Nodo.cs",
+              "DocumentMoniker": "C:\\Users\\Invitado1\\Documents\\GitHub\\tarea3_datos1\\BST Tree\\Nodo.cs",
+              "RelativeDocumentMoniker": "BST Tree\\Nodo.cs",
+              "ToolTip": "C:\\Users\\Invitado1\\Documents\\GitHub\\tarea3_datos1\\BST Tree\\Nodo.cs",
+              "RelativeToolTip": "BST Tree\\Nodo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T00:57:32.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\Invitado1\\Documents\\GitHub\\tarea3_datos1\\BSTTree_test\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "BSTTree_test\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\Invitado1\\Documents\\GitHub\\tarea3_datos1\\BSTTree_test\\UnitTest1.cs",
+              "RelativeToolTip": "BSTTree_test\\UnitTest1.cs",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAYwIwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T00:56:49.277Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

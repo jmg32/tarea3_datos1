@@ -6,3 +6,6 @@
 *.pdb
 .vs/tarea3_datos1/v17/.wsuo
 *.v2
+.vs/BST Tree/v17/.suo
+*.exe
+*.dat
