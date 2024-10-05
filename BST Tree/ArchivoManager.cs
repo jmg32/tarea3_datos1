@@ -27,6 +27,7 @@ namespace BST_Tree
                 writer.Write(nodo.PosicionDerecha);
                 writer.Write(nodo.Eliminado);  // Escribir el campo Eliminado
                 return posicion;
+
             }
         }
 
@@ -55,14 +56,16 @@ namespace BST_Tree
             using (FileStream fs = new FileStream(pathArchivo, FileMode.Open))
             using (BinaryWriter writer = new BinaryWriter(fs))
             {
-                fs.Seek(posicion, SeekOrigin.Begin);
-                writer.Write(nodo.Clave);
-                writer.Write(nodo.Valor);
-                writer.Write(nodo.PosicionIzquierda);
-                writer.Write(nodo.PosicionDerecha);
-                writer.Write(nodo.Eliminado);  // Actualizar el campo Eliminado
+                fs.Seek(posicion, SeekOrigin.Begin); // Moverse a la posición especificada en el archivo
+                writer.Write(nodo.Clave);            // Escribimos la clave del nodo
+                writer.Write(nodo.Valor);            // Escribimos el valor del nodo
+                writer.Write(nodo.PosicionIzquierda); // Escribimos la posición del hijo izquierdo
+                writer.Write(nodo.PosicionDerecha);  // Escribimos la posición del hijo derecho
+                writer.Write(nodo.Eliminado);        // Escribimos el estado de eliminado (asegurándonos de que sea false para nodos reutilizados)
             }
         }
+
+
     }
 
 

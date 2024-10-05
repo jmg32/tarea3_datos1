@@ -33,65 +33,57 @@ namespace BSTTree_test
                 }
             }
 
+            // Esta prueba verifica que al insertar el primer nodo  en el árbol, se almacena correctamente y se puede recuperar con la función de búsqueda.
             [TestMethod]
-            public void InsertarNodo_DebeInsertarNodoRaiz_Correctamente()
+            public void InsertarNodoRaiz()
             {
-                // Arrange
                 BSTree arbol = new BSTree(testFilePath);
 
-                // Act
                 arbol.Insertar(10, "Valor 10");
 
-                // Assert
                 Nodo nodo = arbol.Buscar(10);
                 Assert.IsNotNull(nodo);
                 Assert.AreEqual(10, nodo.Clave);
                 Assert.AreEqual("Valor 10", nodo.Valor);
             }
 
+            // Esta prueba verifica que la búsqueda de un nodo existente en el árbol devuelve el nodo correcto con la clave y el valor esperados.
             [TestMethod]
-            public void BuscarNodo_Existente_DebeRetornarNodoCorrecto()
+            public void BuscarNodoExistente()
             {
-                // Arrange
                 BSTree arbol = new BSTree(testFilePath);
                 arbol.Insertar(10, "Valor 10");
                 arbol.Insertar(20, "Valor 20");
 
-                // Act
                 Nodo nodo = arbol.Buscar(20);
 
-                // Assert
                 Assert.IsNotNull(nodo);
                 Assert.AreEqual(20, nodo.Clave);
                 Assert.AreEqual("Valor 20", nodo.Valor);
             }
 
+            // Esta prueba verifica que la búsqueda de un nodo que no existe en el árbol devuelve null, lo cual indica que no se encontró el nodo.
             [TestMethod]
-            public void BuscarNodo_NoExistente_DebeRetornarNull()
+            public void BuscarNodoNoExistente()
             {
-                // Arrange
                 BSTree arbol = new BSTree(testFilePath);
                 arbol.Insertar(10, "Valor 10");
 
-                // Act
                 Nodo nodo = arbol.Buscar(30); // Clave no existente
 
-                // Assert
                 Assert.IsNull(nodo);
             }
 
+            // Esta prueba verifica que se pueden insertar múltiples nodos en el árbol, y que todos ellos se almacenan y se pueden recuperar correctamente con la búsqueda.
             [TestMethod]
-            public void InsertarMultiplesNodos_DebeInsertarCorrectamente()
+            public void InsertarMultiplesNodos()
             {
-                // Arrange
                 BSTree arbol = new BSTree(testFilePath);
 
-                // Act
                 arbol.Insertar(10, "Valor 10");
                 arbol.Insertar(5, "Valor 5");
                 arbol.Insertar(20, "Valor 20");
 
-                // Assert
                 var nodo10 = arbol.Buscar(10);
                 var nodo5 = arbol.Buscar(5);
                 var nodo20 = arbol.Buscar(20);
@@ -106,23 +98,23 @@ namespace BSTTree_test
                 Assert.AreEqual(20, nodo20.Clave);
             }
 
+            // Esta prueba verifica que al intentar insertar una clave duplicada, el nodo original se mantiene sin cambios y no se inserta una nueva copia
             [TestMethod]
-            public void InsertarNodoDuplicado_DebeMantenerUnicoNodo()
+            public void InsertarNodoDuplicado()
             {
-                // Arrange
                 BSTree arbol = new BSTree(testFilePath);
 
-                // Act
                 arbol.Insertar(10, "Valor 10");
                 arbol.Insertar(10, "Valor Duplicado");
 
-                // Assert
                 Nodo nodo = arbol.Buscar(10);
                 Assert.IsNotNull(nodo);
                 Assert.AreEqual("Valor 10", nodo.Valor); // Verifica que el valor no cambió
             }
+
+            // Esta prueba verifica que un nodo existente se puede eliminar correctamentey que ya no se puede encontrar en el árbol después de la eliminación.
             [TestMethod]
-            public void EliminarNodo_Existente_DebeMarcarloComoEliminado()
+            public void EliminarNodo_Existente()
             {
                 // Arrange
                 BSTree arbol = new BSTree(testFilePath);
@@ -138,6 +130,28 @@ namespace BSTTree_test
                 var nodoEliminado = arbol.Buscar(5);
                 Assert.IsNull(nodoEliminado);  // El nodo ya no debería estar disponible
             }
+
+            // Esta prueba verifica que al eliminar un nodo y luego insertar un nuevo nodo, la posición vacante del nodo eliminado se reutiliza correctamente para el nuevo nodo.
+            [TestMethod]
+            public void InsertarDespuesDeEliminar()
+            {
+                BSTree arbol = new BSTree(testFilePath);
+                arbol.Insertar(10, "Valor 10");
+                arbol.Insertar(5, "Valor 5");
+                arbol.Insertar(20, "Valor 20");
+
+                bool eliminado = arbol.Eliminar(5); // Elimina el nodo con clave 5
+                arbol.Insertar(7, "Valor 7"); // Intenta insertar en la posición vacante
+
+                var nodo7 = arbol.Buscar(7); // Busca el nodo recién insertado
+                Assert.IsNotNull(nodo7); // El nodo no debe ser null
+                Assert.AreEqual(7, nodo7.Clave); // Verifica que la clave sea 7
+
+                var nodo5 = arbol.Buscar(5);
+                Assert.IsNull(nodo5); // Verifica que el nodo 5 sigue eliminado
+            }
+
+
 
 
         }
