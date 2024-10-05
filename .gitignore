@@ -1,0 +1,8 @@
+
+*.dll
+*.bin
+*.cache
+*.vsidx
+*.pdb
+.vs/tarea3_datos1/v17/.wsuo
+*.v2
